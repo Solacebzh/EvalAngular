@@ -46,8 +46,6 @@ export class ProductDetailsComponent implements OnInit {
   outOfStock() {
     return this.productService.outOfStock(this.oneProduct);
   }
-  equalProduct(a,b){
-    a =b
-  }
+  
 
 }

@@ -8,3 +8,6 @@
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
   }
+  .container{
+    width: 40em;
+  }

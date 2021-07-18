@@ -30,7 +30,7 @@ export class ProductComponent implements OnInit {
     return this.productService.isTheLast(this.data);
   }
   outOfStock() {
-    return this.productService.isTheLast(this.data);
+    return this.productService.outOfStock(this.data);
   }
   isAvailable(event: Product){
     this.productService.isAvailable(event)
