@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
-
+import { ProductDetailsComponent } from '../product-details/product-details.component';
 import { Product } from '../model/product';
 import { ProductService } from '../services/product.service';
 
@@ -28,6 +28,12 @@ export class ProductComponent implements OnInit {
 
   isTheLast() {
     return this.productService.isTheLast(this.data);
+  }
+  outOfStock() {
+    return this.productService.isTheLast(this.data);
+  }
+  isAvailable(event: Product){
+    this.productService.isAvailable(event)
   }
 
 }
