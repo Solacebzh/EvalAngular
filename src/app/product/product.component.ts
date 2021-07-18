@@ -35,5 +35,5 @@ export class ProductComponent implements OnInit {
   isAvailable(event: Product){
     this.productService.isAvailable(event)
   }
-
+  
 }

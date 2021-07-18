@@ -6,7 +6,7 @@
       <p>{{data.description}}</p>
       <p>
         <button class="btn btn-primary"  (click)="addToBasketClick()" [disabled]="data.stock === 0">Add to Cart</button>
-        <button class="btn btn-primary viewproduct" [routerLink] = "['/product', data.id]">view product</button>
+        <button class="btn btn-primary viewproduct"[routerLink] = "['/product', data.id]">view product</button>
       </p>
     </div>
   </div>
