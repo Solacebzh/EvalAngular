@@ -20,7 +20,7 @@ export class ProductDetailsComponent implements OnInit {
     productService.getProducts().subscribe(products => {
       this.products = products;
     })
-
+    
    }
 
   ngOnInit() {
@@ -34,7 +34,10 @@ export class ProductDetailsComponent implements OnInit {
     })
   
   })
-  
+    
+  }
+  isAvailable(product: Product): boolean {
+    return this.productService.isAvailable(product);
   }
   addToBasket(event: Product): void {
     this.customerService.addProduct(event);
